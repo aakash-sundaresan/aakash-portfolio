@@ -15,6 +15,17 @@
     --project-card-text: #333333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 .dark-mode {
     --background-color: var(--dark-background-color);
     --text-color: var(--dark-text-color);
