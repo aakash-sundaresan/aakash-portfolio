@@ -509,10 +509,10 @@ a:hover {
 }
 
 .tab-container {
-    padding: 20px;
     font-size: 20px;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     overflow: visible;
