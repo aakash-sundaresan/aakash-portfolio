@@ -361,11 +361,13 @@ section {
     margin-top: 0;
     text-align: right;
     align-items: center;
-    color: #fff;
+    color: #ffffff;
 }
 .dark-mode .timeline-content h4 {
-    color: #333; 
+    color: #333333;
 }
+
+
 
 .timeline-content p {
     margin: 5px 0;
