@@ -88,8 +88,8 @@
     const li = document.createElement('li');
     li.textContent = item;
     ul.appendChild(li);
-    const br = document.createElement('br');
-    ul.appendChild(br);
+    // const br = document.createElement('br');
+    // ul.appendChild(br);
     });
 
     // Clear existing content in modalSummary and append the unordered list
