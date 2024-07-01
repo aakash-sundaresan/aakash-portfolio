@@ -29,48 +29,56 @@
     
 
     function toggleTab(tabName) {
-    const tabContent = document.getElementById(tabName);
-    tabContent.classList.toggle('show');
-
-    const icon = document.getElementById(tabName + '-icon');
-    icon.textContent = icon.textContent === '+' ? '-' : '+';
-    }
-    ;
+        const tabContent = document.getElementById(tabName);
+        tabContent.classList.toggle('show');
+    
+        const icon = document.getElementById(tabName + '-icon');
+        icon.textContent = icon.textContent === '+' ? '-' : '+';
+    };
+    
     document.addEventListener('DOMContentLoaded', function () {
         const timelineItems = document.querySelectorAll('.timeline-item');
-
+    
         timelineItems.forEach(item => {
             const content = item.querySelector('.expanded-content');
-
-            item.addEventListener('click', function () {
+    
+            // Use mouseover to show the content
+            item.addEventListener('mouseover', function () {
                 if (content) {
-                    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                    content.style.display = 'block';
+                }
+            });
+    
+            // Use mouseout to hide the content
+            item.addEventListener('mouseout', function () {
+                if (content) {
+                    content.style.display = 'none';
                 }
             });
         });
     });
 
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    const headerHeight = document.querySelector('.sticky-header').offsetHeight;
-                    const targetPosition = targetElement.offsetTop - headerHeight;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('.tab');
+    
+        tabs.forEach(tab => {
+            const tabContent = tab.querySelector('.tab-content');
+            const icon = tab.querySelector('.icon');
+    
+            // Show content on mouse enter
+            tab.addEventListener('mouseenter', function () {
+                tabContent.classList.add('show');
+                icon.textContent = '-';
+            });
+    
+            // Hide content on mouse leave
+            tab.addEventListener('mouseleave', function () {
+                tabContent.classList.remove('show');
+                icon.textContent = '+';
             });
         });
     });
+    
 
 
     function openProjectDetails(projectId) {
@@ -88,8 +96,8 @@
     const li = document.createElement('li');
     li.textContent = item;
     ul.appendChild(li);
-    // const br = document.createElement('br');
-    // ul.appendChild(br);
+    const br = document.createElement('br');
+    ul.appendChild(br);
     });
 
     // Clear existing content in modalSummary and append the unordered list
