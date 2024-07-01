@@ -84,7 +84,7 @@
     function openProjectDetails(projectId) {
     const projectDetails = getProjectDetails(projectId);
     document.getElementById('modalTitle').textContent = projectDetails.name;
-    document.getElementById('modalGithubLink').href = projectDetails.githubLink;
+    // document.getElementById('modalGithubLink').href = projectDetails.githubLink;
     // document.getElementById('modalImage').src = projectDetails.imageUrl;
 
 
@@ -127,7 +127,7 @@
     "Ran multiple machine learning models on the data, including Logistic Regression, LDA, CART, Random Forest, and Neural Networks, achieving an average accuracy of approximately 82% on the testing dataset.",
     "Enhanced models using boosting techniques such as AdaBoost, XGBoost, and CatBoost, resulting in an average improvement of approximately 2%."
         ],
-        githubLink: 'https://github.com/yourusername/project1',
+        
         
     };
     } else if (projectId === 2) {
@@ -139,7 +139,7 @@
             "Did EDA and statistical analysis on python using the data exported from queries.",
             "Generated Analytic Dashboards and Reports from the data using SQL"
         ],
-        githubLink: 'https://github.com/yourusername/project2',
+       
         
     };
     } else if (projectId === 3) {
@@ -150,7 +150,7 @@
     "Used Machine Learning models to predict a risk of default on purchased loans. The customer’s age, credit history, incomeand the loan category were found to be major contributors to the dependent variable ie loan default.",
     "Identified Random Forest to be the most accurate model with an accuracy of 90% on test data"
         ],
-        githubLink: 'https://github.com/yourusername/project3',
+      
     };
     } else if (projectId === 4) {
     return {
@@ -160,22 +160,19 @@
     "Machine learning models included demand forecasting using ARIMA and SARIMAX and XGBoost.",
     "Performed customer segmentation using K-means clustering to determine city hotspots.",
     "Used Gurobi Optimization on UFLP model to plan efficient city transit routes."],
-        githubLink: 'https://github.com/yourusername/project3',
+      
     };
     } else if (projectId === 5) {
     return {
         name: 'Portfolio Website',
         summary: ["Created a website from scratch using HTML to highlight my professional experiences."
         ,"Used CSS and Javascript to design the portfolio according to my requirements."]
-        , githubLink: 'https://github.com/yourusername/project5',
-        imageUrl: 'path/to/project5.jpg'
+        ,
     };
     } else if (projectId === 6) {
     return {
         name: 'Project Six',
         summary: 'Summary of Project Six.',
-        githubLink: 'https://github.com/yourusername/project6',
-        imageUrl: 'path/to/project6.jpg'
     };
     } else {
     // Default case or handle other project IDs
