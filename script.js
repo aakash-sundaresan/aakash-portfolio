@@ -52,7 +52,7 @@
             // Use mouseout to hide the content
             item.addEventListener('mouseout', function () {
                 if (content) {
-                    content.style.display = 'none';
+                    content.style.display = 'none';//khkjhhgcvj
                 }
             });
         });
