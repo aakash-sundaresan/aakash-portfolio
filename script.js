@@ -117,7 +117,17 @@
     }
 
     function getProjectDetails(projectId) {
+        
     if (projectId === 1) {
+    return {
+        name: 'Pitchwolf (Cricket Analytics Platform)',
+        summary: [
+    "Leveraged large-scale video datasets to train a YOLO-based machine learning model for enhancing player performance analytics and providing detailed insights into player movements.",
+    "Utilized advanced computer vision techniques and pose estimation models to predict and visualize dynamic interactions among athletes in cricket, enhancing the accuracy and depth of performance feedback",
+    "Collaborated with engineering teams to integrate machine learning findings into the development of cricket coaching tools, optimizing training strategies.",
+  ],        
+    };
+    } else if (projectId === 2) {
     return {
         name: 'Yelp Business Prediction (UC Berkeley)',
         summary: [
@@ -127,10 +137,8 @@
     "Ran multiple machine learning models on the data, including Logistic Regression, LDA, CART, Random Forest, and Neural Networks, achieving an average accuracy of approximately 82% on the testing dataset.",
     "Enhanced models using boosting techniques such as AdaBoost, XGBoost, and CatBoost, resulting in an average improvement of approximately 2%."
         ],
-        
-        
     };
-    } else if (projectId === 2) {
+    } else if (projectId === 3) {
     return {
         name: 'Design and Analysis of RDBMS Schema (UC Berkeley)',
         summary:[
@@ -142,7 +150,7 @@
        
         
     };
-    } else if (projectId === 3) {
+    } else if (projectId === 4) {
     return {
         name: 'Credit Risk Analysis (UC Berkeley)',
         summary: [
@@ -152,7 +160,7 @@
         ],
       
     };
-    } else if (projectId === 4) {
+    } else if (projectId === 5) {
     return {
         name: 'Transit Route Optimization using Uber/Lyft Data',
         summary: ["Optimizing routing of transit services in and around the greater Boston Area using various machine learning models.",
@@ -162,17 +170,12 @@
     "Used Gurobi Optimization on UFLP model to plan efficient city transit routes."],
       
     };
-    } else if (projectId === 5) {
+    } else if (projectId === 6) {
     return {
         name: 'Portfolio Website',
         summary: ["Created a website from scratch using HTML to highlight my professional experiences."
         ,"Used CSS and Javascript to design the portfolio according to my requirements."]
         ,
-    };
-    } else if (projectId === 6) {
-    return {
-        name: 'Project Six',
-        summary: 'Summary of Project Six.',
     };
     } else {
     // Default case or handle other project IDs
