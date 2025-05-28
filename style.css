@@ -793,6 +793,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
     .nav {
         top: 1rem;
         padding: 0.5rem 1rem;
@@ -813,6 +827,8 @@ body {
         justify-content: center;
         margin-top: 2rem;
         transform: none;
+        right: auto;
+        top: auto;
     }
 
     .about-content {
