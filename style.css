@@ -866,6 +866,18 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .hero-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 /* Scroll animations */
 .scroll-reveal {
     opacity: 0;
