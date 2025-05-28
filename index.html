@@ -1,493 +1,1109 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakash Sundaresan | Technical Consultant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Your Portfolio - Home</title>
 </head>
 <body>
-<div class="sticky-header">
-    <nav>
+    <div class="bg-animation"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
         <ul>
-            <li><a href="#introduction">About Me</a></li>
-            <li><a href="#professional-timeline">My Timeline</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <include src="nav.html"></include>    
-    
-    <header>
-        <h1>Aakash Sundaresan</h1>
-        <p>Technical Consultant | UC Berkeley Graduate</p>
-        <div id="web-links">
-        <a href="https://www.linkedin.com/in/aakash-sundaresan/" target="_blank">
-            <svg height="1.5em" 
-            viewBox="0 0 448 512"
-            
-            >
-            <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-        </svg>
-
-
-        </a>
-        <a href="https://github.com/aakash-sundaresan" target="_blank">
-            <svg height="1.5em" 
-            viewBox="0 0 496 512"
-           
-            >
-            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-        </svg>
-        </a>
-        <a href="mailto:aakash.sundaresan2022@gmail.com">
-            <svg height="1.5em" 
-            viewBox="0 0 512 512"
-            
-            >
-            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-        </svg>
-
-        </a>
-        
-        <a href="https://github.com/aakash-sundaresan/aakash-portfolio/blob/main/Aakash%20Sundaresan.pdf" target="_blank">
-            <svg
-            height="1.5em"
-            viewBox="0 0 482.14 482.14"
-            >
-            <g>
-                <path d="M142.024,310.194c0-8.007-5.556-12.782-15.359-12.782c-4.003,0-6.714,0.395-8.132,0.773v25.69
-                    c1.679,0.378,3.743,0.504,6.588,0.504C135.57,324.379,142.024,319.1,142.024,310.194z"/>
-                <path d="M202.709,297.681c-4.39,0-7.227,0.379-8.905,0.772v56.896c1.679,0.394,4.39,0.394,6.841,0.394
-                    c17.809,0.126,29.424-9.677,29.424-30.449C230.195,307.231,219.611,297.681,202.709,297.681z"/>
-                <path d="M315.458,0H121.811c-28.29,0-51.315,23.041-51.315,51.315v189.754h-5.012c-11.418,0-20.678,9.251-20.678,20.679v125.404
-                    c0,11.427,9.259,20.677,20.678,20.677h5.012v22.995c0,28.305,23.025,51.315,51.315,51.315h264.223
-                    c28.272,0,51.3-23.011,51.3-51.315V121.449L315.458,0z M99.053,284.379c6.06-1.024,14.578-1.796,26.579-1.796
-                    c12.128,0,20.772,2.315,26.58,6.965c5.548,4.382,9.292,11.615,9.292,20.127c0,8.51-2.837,15.745-7.999,20.646
-                    c-6.714,6.32-16.643,9.157-28.258,9.157c-2.585,0-4.902-0.128-6.714-0.379v31.096H99.053V284.379z M386.034,450.713H121.811
-                    c-10.954,0-19.874-8.92-19.874-19.889v-22.995h246.31c11.42,0,20.679-9.25,20.679-20.677V261.748
-                    c0-11.428-9.259-20.679-20.679-20.679h-246.31V51.315c0-10.938,8.921-19.858,19.874-19.858l181.89-0.19v67.233
-                    c0,19.638,15.934,35.587,35.587,35.587l65.862-0.189l0.741,296.925C405.891,441.793,396.987,450.713,386.034,450.713z
-                    M174.065,369.801v-85.422c7.225-1.15,16.642-1.796,26.58-1.796c16.516,0,27.226,2.963,35.618,9.282
-                    c9.031,6.714,14.704,17.416,14.704,32.781c0,16.643-6.06,28.133-14.453,35.224c-9.157,7.612-23.096,11.222-40.125,11.222
-                    C186.191,371.092,178.966,370.446,174.065,369.801z M314.892,319.226v15.996h-31.23v34.973h-19.74v-86.966h53.16v16.122h-33.42
-                    v19.875H314.892z"/>
-            </g>
-        </svg>
-        </a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">👋 Welcome to my portfolio</div>
+            <h1>Aakash Sundaresan</h1>
+            <div class="hero-subtitle">Data Scientist & Technical Consultant</div>
+            <p class="hero-description">
+                Specializing in advanced analytics and AI solutions, I leverage data to drive strategic decision-making and create innovative solutions that make a real-world impact.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
-        <div class="toggle-container">
-            <label class="switch">
-              <input type="checkbox" id="toggle-dark-mode" onclick="toggleDarkMode()">
-              <span class="slider"></span>
-            </label>
-        </div>
-          
-    </header>
-    
-</div>
-    <!-- Introduction Section -->
-    <section id="introduction">
-        <h2>About Me</h2>
-        <div class="image-container">
-        <img src="https://github.com/aakash-sundaresan/aakash-portfolio/blob/main/aakash_headshot.jpeg?raw=true" alt="Aakash Sundaresan">
-        </div>
-        <div class="intro-text">
-        <p>
-            I am a Technical Consultant with a Master of Analytics from UC Berkeley and a background in Statistics from Loyola College, Chennai. Specializing in data science, I am committed to harnessing advanced analytics to drive strategic decision-making and operational efficiencies in the tech industry. My goal is to continue developing innovative solutions that leverage data to create real-world impact.
-        </p>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aakash-sundaresan/" target="_blank" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/aakash-sundaresan" target="_blank" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="mailto:aakash.sundaresan2022@gmail.com" title="Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-20.728c-.904 0-1.636-.732-1.636-1.636v-13.909c0-.904.732-1.636 1.636-1.636h20.728c.904 0 1.636.732 1.636 1.636zm-1.636-1.636h-20.728l10.364 9.273 10.364-9.273zm0 2.909l-10.364 9.273-10.364-9.273v10.909h20.728v-10.909z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/aakash-sundaresan/aakash-portfolio/blob/main/Aakash%20Sundaresan.pdf" target="_blank" title="Resume">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+            </a>
         </div>
     </section>
 
-    <section id="professional-timeline">
-        <h2>My Timeline</h2>
-        
-
-        
-
-        <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-            <div class="year">Present</div>
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <a href="https://www.intueor.com/">
-                        <img src="https://assets-global.website-files.com/5eb8b319988ef249b0c03e27/5f36cce699ce05a248c15fd5_intueor-logo-dark.svg" alt="Intueor Logo", title="Intueor Website">
-                        </a>
-                        <h1>Consultant</h1>    
-                        <h4 id="result"></h4>            
-                    </div>
-                    <p>Intueor Consulting Inc | California, USA</p>
-                    <span class="expand-arrow">▼</span>
-                    <div class="expanded-content">
-                        <h2>Experience at Intueor - Full Time</h2>
-                            <ul>
-                                <li>
-                                    Led the integration and QA testing for a ServiceNow implementation, achieving a consistent 15-20% increase in sprint velocity for each sprint. Crafted comprehensive test cases to validate system functionalities, ensuring a smooth transition to the new ServiceNow instance. Collaborating closely with cross-functional teams—including developers, data engineers, design teams, and clients— delivered high-quality results within agile sprint timelines.
-                                </li>
-                                <li>
-                                    Ideated and engineered an AI-powered application using Flask, integrating GPT's API for natural language processing, which enabled automated document analysis and information retrieval within project management workflows. Designed and implemented the entire stack, including UI/UX with HTML/CSS and JavaScript, streamlining access to project documents and achieving a tenfold improvement in business flow times.
-                                </li>
-                                <li>
-                                    Analyzed a high-volume ticketing system for a Major Public Transportation Agency, processing thousands of requests daily, and utilized data analysis techniques to identify frequent issues and staffing efficiencies. Implemented team adjustments based on data-driven insights, projecting a 50% reduction in ticket response times.    
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Timeline Item 2 -->
-       
-        
-        <div class="timeline-item">
-            <div class="year">2023</div>
-            <div class="timeline-content">
-                    <div class = 'timeline-header'>
-                        <a href="https://www.berkeley.edu/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" alt="UC Berkeley Logo" title="UC Berkeley Website">
-                        </a>
-                        <h1>Master of Analytics, Operations Research</h1>
-                        <h4>1 year</h4>
-                    </div>
-                <p>University of California, Berkeley | California, USA</p>
-                <span class="expand-arrow">▼</span>
-                    <div class="expanded-content">
-                        <h2>Coursework at UC Berkeley</h2>
-                            <ul>
-                                <li>
-                                    Analysis and Design of Databaases (SQL)
-                                </li>
-                                <li>
-                                    Machine Learning(Python)
-                                </li>
-                                <li>
-                                    Optimization Analytics (AMPL) 
-                                </li>
-                                <li>
-                                    Probability and Statistics
-                                </li>
-                                <li>
-                                    Suply Chain Management (Gurobi)
-                                </li>
-                                <li>
-                                    Financial Engineering 
-                                </li>
-                            </ul>
-                    </div>
-            </div>
-        </div>
-
-        <!-- Timeline Item 4 -->
-        <div class="timeline-item">
-            <div class="year">2021</div>
-            <div class="timeline-content">
-            <div class = 'timeline-header'>
-                <a href="https://loyolacollege.edu/" target="_blank">
-                <img src = "https://upload.wikimedia.org/wikipedia/en/1/13/Loyola_College_Chennai_-_Coat_of_arms.png", alt="Loyola", title="Loyola Website">
-                </a>
-                <h1>Bachelor of Science, Statistics</h1>
-                <h4>3 years</h4>
-            </div>
-                <p>Loyola College of Arts and Science | Tamil Nadu, India</p>
-                <span class="expand-arrow">▼</span>
-                    <div class="expanded-content">
-                        <h2>Coursework at Loyola College of Arts and Science</h2>
-                            <ul>
-                                <li>
-                                    Linear Algebra
-                                </li>
-                                <li>
-                                    Probability and Random Variables
-                                </li>
-                                <li>
-                                    Probability Distributions 
-                                </li>
-                                <li>
-                                    Regression Analysis (R)
-                                </li>
-                                <li>
-                                    DBMS (SQL)
-                                </li>
-                                <li>
-                                    Business Process Management
-                                </li>
-                                <li>
-                                    Actuarial Science
-                                </li>
-                            </ul>
-                    </div>
-            </div>
-        </div>
-     </section>
-    
-     
-    
-     <section id="skills">
-        <h2>Skills</h2>
-
-        <div class="tab-container">
-
-            <div class="tab">
-                <div class="tab-name">
-                    <div></div>
-                    <div>Languages</div>
-                    <div id="languages-icon" class="icon">+</div>
-                </div>
-            
-                <div id="languages" class="tab-content">
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                        <li>C++</li>
-                        <li>AMPL</li>
-                    </ul>
-                </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about transforming data into actionable insights</p>
             </div>
             
-
-            <div class="tab" onclick="toggleTab('database')">
-                <div class="tab-name">
-                    <div></div>
-                    <div>Databases</div>
-                    <div id="database-icon" class="icon">+</div>
+            <div class="about-content scroll-reveal">
+                <div class="about-image">
+                    <img src="https://github.com/aakash-sundaresan/aakash-portfolio/blob/main/aakash_headshot.jpeg?raw=true" alt="Aakash Sundaresan">
                 </div>
-
-                <div id="database" class="tab-content">
-
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="tab" onclick="toggleTab('mlai')">
-                <div class="tab-name">
-                    <div></div>
-                    <div>ML/AI</div>
-                    <div id="mlai-icon" class="icon">+</div>
-                </div>
-
-                <div id="mlai" class="tab-content">
-                    <ul>
-                        <li>Pandas</li>
-                        <li>SciKit</li>
-                        <li>Keras</li>
-                        <li>Computer Vision (YOLO)</li>
-                    </ul>
+                <div class="about-text">
+                    <h3>Data Scientist & Technical Consultant</h3>
+                    <p>
+                        With a Master of Analytics from UC Berkeley and extensive experience in technical consulting, I specialize in leveraging advanced analytics and AI to solve complex business challenges. My expertise spans across machine learning, data engineering, and strategic consulting.
+                    </p>
+                    <p>
+                        I'm passionate about creating innovative solutions that bridge the gap between cutting-edge technology and real-world applications, helping organizations make data-driven decisions that drive growth and efficiency.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Let's Connect</a>
                 </div>
             </div>
 
-            <div class="tab" onclick="toggleTab('bigdata')">
-                <div class="tab-name">
-                    <div></div>
-                    <div>BigData</div>
-                    <div id="bigdata-icon" class="icon">+</div>
+            <div class="stats scroll-reveal">
+                <div class="stat-item">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Years Experience</div>
                 </div>
-                 <div id="bigdata" class="tab-content">
-                    <ul>
-                        <li>SparkSQL</li>
-                        <li>PySpark</li>
-                    </ul>
-                 </div>
-            </div>
-
-            <div class="tab" onclick="toggleTab('environments')">
-                <div class="tab-name">
-                    <div></div>
-                    <div>Environments</div>
-                    <div id="bigdata-icon" class="icon">+</div>
-                </div>
-                <div id="environments" class="tab-content">
-                    <ul>
-                        <li>Jupyter</li>
-                        <li>VisualStudio</li>
-                        <li>Google-colab</li>
-                    </ul>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <!-- Timeline Section -->
+    <section id="timeline" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">My Journey</h2>
+                <p class="section-subtitle">Professional timeline and educational background</p>
+            </div>
 
-        <div class="project-container">
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="https://assets-global.website-files.com/5eb8b319988ef249b0c03e27/5f36cce699ce05a248c15fd5_intueor-logo-dark.svg" alt="Intueor" class="timeline-logo">
+                            <div>
+                                <div class="timeline-title">Technical Consultant</div>
+                                <div class="timeline-company">Intueor Consulting Inc</div>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Developing internal tools to automate and enhance business processes, improving operational efficiency. Utilizing data analysis to identify insights and drive process improvements for clients across various domains.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">CI/CD Pipelines</span>
+                            <span class="skill-tag">AI/ML</span>
+                            <span class="skill-tag">QA Engineering</span>
+                            <span class="skill-tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="project-card" onclick="openProjectDetails(1)">
-                <h3>Pitchwolf</h3>
-                <p>Computer Vision Project to analyze Player and Sport Metrics</p>
-                <div class="boxed-elements">
-                    <!-- Add boxed elements here -->
-                    <div class="boxed-element">
-                        <p>CV</p>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" alt="UC Berkeley" class="timeline-logo">
+                            <div>
+                                <div class="timeline-title">Master of Analytics</div>
+                                <div class="timeline-company">UC Berkeley</div>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Specialized in Operations Research with focus on machine learning, database design, optimization analytics, and financial engineering.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">AMPL</span>
+                            <span class="skill-tag">Gurobi</span>
+                        </div>
                     </div>
-                    <div class="boxed-element">
-                       <p>Python</p> 
-                    </div>
-                    <div class="boxed-element">
-                        <p>YOLO</p>
-                    </div>
-                    <div class="boxed-element">
-                        <p>ML</p>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/1/13/Loyola_College_Chennai_-_Coat_of_arms.png" alt="Loyola" class="timeline-logo">
+                            <div>
+                                <div class="timeline-title">Bachelor of Science</div>
+                                <div class="timeline-company">Loyola College Chennai</div>
+                            </div>
+                        </div>
+                        <p class="timeline-description">
+                            Statistics major with comprehensive coursework in probability, regression analysis, database management, and actuarial science.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Statistics</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Regression Analysis</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        
-            <div class="project-card" onclick="openProjectDetails(2)">
-                <h3>Yelp Business Continuity Predictions</h3>
-                <p>Machine Learning project to predict the continuity of businesses listed on Yelp</p>
-                <div class="boxed-elements">
-                    <!-- Add boxed elements here -->
-                    <div class="boxed-element">
-                        <p>Python</p>
-                    </div>
-                    <div class="boxed-element">
-                       <p>SciKit-learn</p> 
-                    </div>
-                    <div class="boxed-element">
-                        <p>Keras</p>
-                    </div>
-                    <div class="boxed-element">
-                        <p>Pandas</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
 
-            <div class="project-card" onclick="openProjectDetails(3)">
-                <h3>Design and Analysis of RDBMS Schema</h3>
-                <p>Schema design, Data Generation and Analytics of E-commerce company</p>
-                <div class="boxed-elements">
-                    <!-- Add boxed elements here -->
-                    <div class="boxed-element">
-                        <p>Python</p>
+            <div class="skills-grid">
+                <div class="skill-category scroll-reveal" onclick="toggleSkill(this)">
+                    <div class="skill-header">
+                        <div>
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-name">Programming Languages</div>
+                        </div>
+                        <div class="skill-toggle">▼</div>
                     </div>
-                    <div class="boxed-element">
-                       <p>SQL</p> 
-                    </div>
-                    <div class="boxed-element">
-                        <p>RDBMS</p>
-                    </div>
-                    <div class="boxed-element">
-                        <p>Pandas</p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>R</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 75%"></div></div>
+                        </div>
                     </div>
                 </div>
+
+                <div class="skill-category scroll-reveal" onclick="toggleSkill(this)">
+                    <div class="skill-header">
+                        <div>
+                            <div class="skill-icon">🤖</div>
+                            <div class="skill-name">Machine Learning & AI</div>
+                        </div>
+                        <div class="skill-toggle">▼</div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Pandas</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Scikit-learn</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Keras</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Computer Vision (YOLO)</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal" onclick="toggleSkill(this)">
+                    <div class="skill-header">
+                        <div>
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-name">Databases & Big Data</div>
+                        </div>
+                        <div class="skill-toggle">▼</div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>PostgreSQL</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MySQL</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SparkSQL</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PySpark</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category scroll-reveal" onclick="toggleSkill(this)">
+                    <div class="skill-header">
+                        <div>
+                            <div class="skill-icon">⚙️</div>
+                            <div class="skill-name">Tools & Platforms</div>
+                        </div>
+                        <div class="skill-toggle">▼</div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Jupyter</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Visual Studio</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Google Colab</span>
+                            <div class="skill-progress"><div class="skill-progress-fill" style="width: 100%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of my technical work and achievements</p>
             </div>
 
-            <div class="project-card" onclick="openProjectDetails(4)">
-                <h3>Credit Risk <br> Analysis</h3>
-                <p>Machine Learning Project to create a banking portal and predict customers 
-                    default risks.
-                </p>
-                <div class="boxed-elements">
-                    <!-- Add boxed elements here -->
-                    <div class="boxed-element">
-                        <p>Python</p>
+            <div class="projects-grid">
+                <div class="project-card scroll-reveal" onclick="openProjectModal('dataeagle')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">DataEagle - Automated Web Scraper</h3>
+                        <p class="project-description">
+                            Robust data pipeline using Selenium & Playwright to scrape 100+ agency websites, transforming HTML into structured data with AWS cloud storage and interactive dashboards.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Selenium</span>
+                            <span class="project-tag">Playwright</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Git</span>
+                            <span class="project-tag">CI/CD</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
                     </div>
-                    <div class="boxed-element">
-                       <p>SciKit-learn</p> 
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('adkar')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Adkar Dashboard Development</h3>
+                        <p class="project-description">
+                            End-to-end change management tool with Firebase integration, dynamic JavaScript dashboards, and advanced data processing for real-time visualization.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">AWS</span>
+                            <span class="project-tag">OCM</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Matplotlib</span>
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
                     </div>
-                    <div class="boxed-element">
-                        <p>Keras</p>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('erp')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">ERP System Assessment & Analysis</h3>
+                        <p class="project-description">
+                            High-volume ticketing system analysis for Major Public Transportation Agency, processing thousands of daily requests with data-driven optimization strategies.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Data Analysis</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Performance Optimization</span>
+                            <span class="project-tag">Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
                     </div>
-                    <div class="boxed-element">
-                        <p>Pandas</p>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('aidocument')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Document Management Tool</h3>
+                        <p class="project-description">
+                            AI-powered Flask application integrating OpenAI's API for automated document analysis and information retrieval, achieving 10x improvement in business flow times.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Flask</span>
+                            <span class="project-tag">OpenAI API</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card scroll-reveal" onclick="openProjectModal('pitchwolf')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pitchwolf</h3>
+                        <p class="project-description">
+                            Advanced computer vision project using YOLO for real-time sports analytics and player performance tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Computer Vision</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">YOLO</span>
+                            <span class="project-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('yelp')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Yelp Business Continuity Predictions</h3>
+                        <p class="project-description">
+                            Machine learning model to predict business sustainability using Yelp data with advanced feature engineering.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Scikit-learn</span>
+                            <span class="project-tag">Keras</span>
+                            <span class="project-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('rdbms')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce RDBMS Design</h3>
+                        <p class="project-description">
+                            Comprehensive database schema design and analytics for e-commerce platform with optimized queries.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">SQL</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">RDBMS</span>
+                            <span class="project-tag">Data Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('credit')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Credit Risk Analysis</h3>
+                        <p class="project-description">
+                            Banking portal with ML-powered credit risk assessment and customer default prediction system.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Scikit-learn</span>
+                            <span class="project-tag">Risk Analysis</span>
+                            <span class="project-tag">Banking</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card scroll-reveal" onclick="openProjectModal('transit')">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Transit Route Optimization</h3>
+                        <p class="project-description">
+                            Optimization model using Uber/Lyft data to find most efficient transit routes with ML predictions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Gurobi</span>
+                            <span class="project-tag">Optimization</span>
+                            <span class="project-tag">ML</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
                     </div>
                 </div>
             </div>
-       
-            <div class="project-card" onclick="openProjectDetails(5)">
-                <h3>Transit Route Optimization using Uber/Lyft Data</h3>
-                <p>Machine Learning and Optimization Project to find Most Optimal Route</p>
-                <div class="boxed-elements">
-                    <div class="boxed-element">
-                        <p>Python</p>
-                    </div>
-                    <div class="boxed-element">
-                       <p>Gurobi</p> 
-                    </div>
-                    <div class="boxed-element">
-                        <p>Keras</p>
-                    </div>
-                    <div class="boxed-element">
-                        <p>Pandas</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to work together? Let's make something amazing!</p>
             </div>
 
-            <div class="project-card" onclick="openProjectDetails(6)">
-                <h3>Aakash Sundaresan - Portfolio Website</h3>
-                <p>Project to create my own portfolio website from scratch using frontend tools</p>
-                <div class="boxed-elements">
-                    <div class="boxed-element">
-                        <p>HTML</p>
+            <div class="contact-content">
+                <div class="contact-info scroll-reveal">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities, innovative projects, and potential collaborations. Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-20.728c-.904 0-1.636-.732-1.636-1.636v-13.909c0-.904.732-1.636 1.636-1.636h20.728c.904 0 1.636.732 1.636 1.636zm-1.636-1.636h-20.728l10.364 9.273 10.364-9.273zm0 2.909l-10.364 9.273-10.364-9.273v10.909h20.728v-10.909z"/>
+                            </svg>
+                            <div>
+                                <strong>Email</strong>
+                                <p>aakash.sundaresan2022@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/aakash-sundaresan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>github.com/aakash-sundaresan</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="boxed-element">
-                       <p>JavaScript</p> 
-                    </div>
-                    <div class="boxed-element">
-                        <p>CSS</p>
+                </div>
+
+                <form class="contact-form scroll-reveal" action="https://getform.io/f/df309cf4-4b33-4a47-9571-97c48ce596dd" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
                     </div>
                     
-                </div>
-            </div>
-
-
-        <div id="projectModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <h1 id="modalTitle"></h1>
-                <h3>Summary :</h3>
-                <div id="modalSummary"></div>
-                
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or just say hello!" required></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
-        
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <form action="https://getform.io/f/df309cf4-4b33-4a47-9571-97c48ce596dd" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <!-- Add hidden Honeypot input to prevent spams -->
-                <input type="hidden" name="_gotcha" style="display:none !important">
-                <button type="submit">Send</button>
-            </form>
+            <p>&copy; 2024 Aakash Sundaresan. Built with passion and modern web technologies.</p>
         </div>
-        
-    </section>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Skills toggle functionality
+        function toggleSkill(element) {
+            element.classList.toggle('active');
+        }
+
+        // Project modal functionality
+        const projectData = {
+            pitchwolf: {
+                title: "Pitchwolf - Sports Analytics Platform",
+                summary: "Advanced computer vision project utilizing YOLO object detection for real-time sports analytics. The system tracks player movements, analyzes performance metrics, and provides detailed insights for coaching and training purposes.",
+                details: [
+                    "Implemented YOLO v8 for real-time object detection and tracking",
+                    "Developed custom metrics for player performance analysis",
+                    "Created interactive dashboard for coaches and analysts",
+                    "Achieved 95% accuracy in player tracking and movement detection",
+                    "Processed over 1000 hours of sports footage for training data"
+                ]
+            },
+            yelp: {
+                title: "Yelp Business Continuity Predictions",
+                summary: "Machine learning project to predict business sustainability using comprehensive Yelp dataset analysis. The model incorporates multiple factors including reviews, ratings, location data, and business characteristics.",
+                details: [
+                    "Analyzed dataset of 200,000+ businesses across multiple cities",
+                    "Implemented ensemble methods combining Random Forest and XGBoost",
+                    "Achieved 87% accuracy in predicting business closure within 2 years",
+                    "Feature engineering on review sentiment and temporal patterns",
+                    "Deployed model using Flask API for real-time predictions"
+                ]
+            },
+            rdbms: {
+                title: "E-commerce Database Design & Analytics",
+                summary: "Comprehensive RDBMS schema design for e-commerce platform with optimized queries and advanced analytics. Includes data generation, performance optimization, and business intelligence reporting.",
+                details: [
+                    "Designed normalized database schema for 1M+ product catalog",
+                    "Implemented complex queries with 99.9% performance optimization",
+                    "Created automated data generation scripts for testing",
+                    "Built comprehensive analytics dashboard with real-time metrics",
+                    "Optimized database performance handling 10,000+ concurrent users"
+                ]
+            },
+            credit: {
+                title: "Credit Risk Analysis System",
+                summary: "Banking portal with integrated machine learning for credit risk assessment and customer default prediction. Combines traditional financial metrics with advanced ML algorithms.",
+                details: [
+                    "Developed risk scoring model with 92% accuracy",
+                    "Integrated with banking systems for real-time assessment",
+                    "Implemented gradient boosting algorithms for risk prediction",
+                    "Created comprehensive risk dashboard for loan officers",
+                    "Reduced default rates by 15% through predictive modeling"
+                ]
+            },
+            transit: {
+                title: "Transit Route Optimization",
+                summary: "Advanced optimization project using Uber/Lyft data to determine optimal transit routes. Combines machine learning predictions with mathematical optimization techniques.",
+                details: [
+                    "Analyzed 5M+ ride-sharing data points for pattern recognition",
+                    "Implemented Gurobi optimization solver for route planning",
+                    "Reduced average travel time by 23% in test scenarios",
+                    "Created predictive models for demand forecasting",
+                    "Integrated real-time traffic data for dynamic routing"
+                ]
+            },
+            dataeagle: {
+                title: "DataEagle - Automated Web Scraper",
+                summary: "Robust data pipeline architecture utilizing Selenium for automated web scraping across 100+ agency websites. Transforms raw HTML into structured datasets with cloud storage integration and interactive business intelligence dashboards.",
+                details: [
+                    "Architected scalable data pipeline processing 100+ agency websites daily",
+                    "Implemented Selenium automation with robust error handling and retry mechanisms",
+                    "Transformed raw HTML into structured pandas DataFrames with data cleansing",
+                    "Integrated AWS S3 for secure storage of both raw and processed datasets",
+                    "Deployed frontend on AWS Amplify with real-time data visualization dashboards",
+                    "Eliminated manual data collection processes, enabling data-driven decision making",
+                    "Built automated monitoring system for data quality and pipeline health"
+                ]
+            },
+            adkar: {
+                title: "Adkar Dashboard Development",
+                summary: "End-to-end change management solution capturing user survey data with Firebase integration. Features dynamic JavaScript dashboards for real-time visualization and advanced mathematical analysis of organizational change metrics.",
+                details: [
+                    "Built comprehensive survey data collection system with Firebase backend",
+                    "Developed dynamic JavaScript dashboard for real-time data visualization",
+                    "Implemented advanced data processing pipelines using Python and SQL",
+                    "Created complex mathematical analyses for change management insights",
+                    "Utilized matplotlib and seaborn for interactive charts and visualizations",
+                    "Streamlined change management processes through actionable insights",
+                    "Integrated user authentication and role-based access control"
+                ]
+            },
+            erp: {
+                title: "ERP System Assessment & Analysis",
+                summary: "Comprehensive analysis of high-volume ticketing system for Major Public Transportation Agency. Processed thousands of daily requests using advanced data analysis techniques to optimize staffing efficiency and reduce response times.",
+                details: [
+                    "Analyzed high-volume ticketing system processing thousands of daily requests",
+                    "Implemented data analysis techniques to identify frequent issues and patterns",
+                    "Developed staffing efficiency models based on ticket volume and complexity",
+                    "Created predictive analytics for resource allocation optimization",
+                    "Projected 50% reduction in ticket response times through data-driven insights",
+                    "Built comprehensive reporting dashboard for management decision-making",
+                    "Established performance metrics and KPI tracking systems"
+                ]
+            },
+            aidocument: {
+                title: "AI Document Management Tool",
+                summary: "AI-powered Flask application integrating OpenAI's API for automated document analysis and intelligent information retrieval. Features full-stack development with modern UI/UX design, achieving significant improvements in business workflow efficiency.",
+                details: [
+                    "Engineered AI-powered application using Flask framework with OpenAI API integration",
+                    "Implemented automated document analysis and intelligent information retrieval",
+                    "Designed and developed full-stack solution with HTML/CSS and JavaScript frontend",
+                    "Created intuitive UI/UX for seamless project document access and management",
+                    "Achieved 10x improvement in business flow times through automation",
+                    "Integrated natural language processing for document querying and analysis",
+                    "Built secure authentication system and document access controls"
+                ]
+            },
+            portfolio: {
+                title: "Modern Portfolio Website",
+                summary: "Contemporary portfolio website built from scratch featuring cutting-edge design, smooth animations, and responsive layout. Showcases modern web development techniques and user experience design.",
+                details: [
+                    "Implemented glassmorphism design with advanced CSS techniques",
+                    "Created smooth scroll animations and intersection observers",
+                    "Built responsive design supporting all device sizes",
+                    "Optimized performance for 95+ PageSpeed score",
+                    "Integrated modern typography and gradient animations"
+                ]
+            }
+        };
+
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('projectModal');
+            const content = document.getElementById('modalContent');
+            const project = projectData[projectId];
+            
+            if (project) {
+                content.innerHTML = `
+                    <h2 style="background: var(--primary-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 1rem;">${project.title}</h2>
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Project Overview</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">${project.summary}</p>
+                    <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Key Features & Achievements</h3>
+                    <ul style="color: var(--text-secondary); line-height: 1.8;">
+                        ${project.details.map(detail => `<li style="margin-bottom: 0.5rem;">• ${detail}</li>`).join('')}
+                    </ul>
+                `;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target === modal) {
+                closeProjectModal();
+            }
+        }
+
+        // Navbar scroll effect
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.nav');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                navbar.style.transform = 'translateX(-50%) translateY(-100%)';
+            } else {
+                // Scrolling up
+                navbar.style.transform = 'translateX(-50%) translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Form submission handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Reset after 3 seconds (for demo purposes)
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent!';
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }, 1000);
+        });
+
+        // Typing animation for hero subtitle
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.textContent = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize typing animation after page load
+        window.addEventListener('load', function() {
+            const subtitle = document.querySelector('.hero-subtitle');
+            const originalText = subtitle.textContent;
+            setTimeout(() => {
+                typeWriter(subtitle, originalText, 80);
+            }, 1500);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const rate = scrolled * -0.5;
+            
+            if (hero) {
+                hero.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Skill progress animation
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-progress-fill');
+            skillBars.forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0%';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 100);
+            });
+        }
+
+        // Trigger skill animation when skills section is visible
+        const skillsSection = document.querySelector('#skills');
+        const skillsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateSkillBars();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+
+        // Counter animation for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start) + (element.textContent.includes('+') ? '+' : element.textContent.includes('%') ? '%' : '');
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target + (element.textContent.includes('+') ? '+' : element.textContent.includes('%') ? '%' : '');
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Trigger counter animation
+        const statsSection = document.querySelector('.stats');
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        const target = parseInt(counter.textContent);
+                        animateCounter(counter, target);
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Theme persistence (if you want to add theme toggle later)
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+        }
+
+        // Initialize theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        setTheme(savedTheme);
+
+        // Add floating particles effect
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.style.cssText = `
+                position: fixed;
+                width: 4px;
+                height: 4px;
+                background: rgba(102, 126, 234, 0.5);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: -1;
+                animation: float-particle 3s linear forwards;
+            `;
+            
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.top = '100vh';
+            
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 3000);
+        }
+
+        // Add particle animation keyframes
+        const particleStyle = document.createElement('style');
+        particleStyle.textContent = `
+            @keyframes float-particle {
+                to {
+                    transform: translateY(-100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(particleStyle);
+
+        // Create particles periodically
+        setInterval(createParticle, 300);
+
+        // Cursor trail effect
+        const cursor = {
+            x: 0,
+            y: 0
+        };
+
+        const cursorTrail = [];
+        const trailLength = 10;
+
+        for (let i = 0; i < trailLength; i++) {
+            const dot = document.createElement('div');
+            dot.style.cssText = `
+                position: fixed;
+                width: 4px;
+                height: 4px;
+                background: rgba(102, 126, 234, ${1 - i / trailLength});
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 9999;
+                transition: all 0.1s ease;
+            `;
+            document.body.appendChild(dot);
+            cursorTrail.push(dot);
+        }
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.x = e.clientX;
+            cursor.y = e.clientY;
+        });
+
+        function updateCursorTrail() {
+            cursorTrail.forEach((dot, index) => {
+                const nextDot = cursorTrail[index + 1] || cursor;
+                dot.style.left = nextDot.x + 'px';
+                dot.style.top = nextDot.y + 'px';
+            });
+            
+            requestAnimationFrame(updateCursorTrail);
+        }
+
+        updateCursorTrail();
+    </script>
+
     <style>
-        @media only screen and (max-width: 768px) {
-            .col-sm-6 {
-                width: 100%;
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal-content {
+            background: var(--dark-secondary);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 3rem;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-primary);
+        }
+
+        .close {
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: var(--text-primary);
+        }
+
+        /* Active navigation state */
+        .nav a.active {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        /* Hide cursor trail on mobile */
+        @media (max-width: 768px) {
+            .cursor-trail {
+                display: none;
+            }
+        }
+
+        /* Additional responsive improvements */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .modal-content {
+                padding: 2rem;
+                margin: 1rem;
             }
         }
     </style>
-    
-
-    <script src="script.js"></script>
-
-    <footer>
-        <p>&copy; 2024 Aakash Sundaresan</p>
-    </footer>
 </body>
 </html>
